@@ -1,0 +1,153 @@
+/*fontes*/
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./assets/fonts/Montserrat.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*variaveis*/
+:root {
+	--cor-primaria: #bc0101;
+	--cor-secundaria: #000;
+	--cor-tercearia: #fff;
+}
+ 
+/*fundo*/
+body {
+	background-color: var(--cor-primaria);
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+}
+
+/*conteúdo*/
+main {
+	background: var(--cor-secundaria);
+	padding: 50px 50px 20px 50px; 
+	width:500px;
+	border: 50px solid var(--cor-tercearia);
+	margin: auto;
+}
+
+/*header a.k.a banner da revanche*/
+header {
+    background-color: var(--cor-secundaria);
+    width: 120%;
+    margin-left: -50px;
+    display: block;
+    text-align: center; 
+    box-sizing: content-box; 
+}
+
+/*banner da revanche, coloquei um recorte que tinha aqui mas esta em baixa qualidade, tbm aconselho a colocar em png pois dessa forma coloquei no header um bloco preto no fundo pra cobrir tudo*/
+header img {
+    background-color: var(--cor-tercearia);
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+/*navegador*/
+nav ul {
+    list-style: none;
+    padding: auto;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+li, li a {
+    color: var(--cor-tercearia);
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 300;
+    transition: all 0.8s ease-out;
+    opacity: 1;
+}
+
+li {
+    padding: 0;
+    width: auto;
+    display: block; 
+}
+
+li a {
+    background: var(--cor-primaria);
+    display: block;
+    padding: 10px;
+    width: 120px;
+}
+
+li a:hover {
+    box-shadow: inset 200px 0 0 0 #fff;
+    letter-spacing: 2px;
+    color: var(--cor-primaria);
+}
+
+/*divisória horizontal rule*/
+hr {
+	border: 0;
+	height: 0.5px;
+	background: var(--cor-tercearia);
+	margin: 20px auto;
+}
+
+/*título*/
+h1 {
+	font-family: 'Montserrat';
+	font-size: 60px;
+    font-weight: 100;
+    color: var(--cor-secundaria);
+	text-align: center;
+    border-bottom: 10px solid var(--cor-primaria);
+	line-height: 1.1;
+	margin: 0px 0px 10px;
+}
+
+/*paragrafo*/
+p {
+	font-family:'Montserrat';
+	font-size:14px;
+	color: var(--cor-tercearia);
+	text-align: justify;
+}
+
+/*o container que esta cobrindo o conteúdo, coloquei a img do fantasma da revanche mas pode alterar no html*/
+#cover-container {
+    width: 700px; 
+    margin: auto; 
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+}
+
+.cover-image {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 100; 
+    width:85.7%;
+    height: 100%;
+    border-left: 50px solid var(--cor-tercearia);
+    border-right: 50px solid var(--cor-tercearia);
+    border-top: 0; 
+    border-bottom: 0;
+    object-fit: contain;
+    transition: transform 0.8s ease-in-out;
+    background-color: var(--cor-secundaria);
+}
+
+#cover-container:hover .cover-image {
+    transform: translateY(-100%); 
+}
