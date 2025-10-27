@@ -33,18 +33,9 @@ main {
 }
 
 /*header a.k.a banner da revanche*/
-header {
-    background-color: var(--cor-secundaria);
-    width: 120%;
-    margin-left: -50px;
-    display: block;
-    text-align: center; 
-    box-sizing: content-box; 
-}
 
-/*banner da revanche, coloquei um recorte que tinha aqui mas esta em baixa qualidade, tbm aconselho a colocar em png pois dessa forma coloquei no header um bloco preto no fundo pra cobrir tudo*/
 header img {
-    background-color: var(--cor-tercearia);
+	width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
