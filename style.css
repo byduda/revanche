@@ -10,30 +10,25 @@
 :root {
 	--cor-primaria: #bc0101;
 	--cor-secundaria: #000;
-	--cor-tercearia: #fff;
+	--cor-tercearia: #d9cdb5;
 }
  
 /*fundo*/
 body {
 	background-color: var(--cor-primaria);
-    min-height: 100vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin: 0;
+    margin: 5%;
 }
 
 /*conteúdo*/
 main {
 	background: var(--cor-secundaria);
 	padding: 50px 50px 20px 50px; 
-	width:500px;
+	width:400px;
 	border: 50px solid var(--cor-tercearia);
 	margin: auto;
 }
 
 /*header a.k.a banner da revanche*/
-
 header img {
 	width: 100%;
     height: auto;
@@ -43,21 +38,21 @@ header img {
     padding: 0px;
 }
 
-/*navegador*/
+/*menu de navegação*/
 nav ul {
     list-style: none;
-    padding: auto;
+    padding: 0;
     margin: auto;
     display: flex; 
     flex-wrap: wrap;
-    align-items: center;
     gap: 10px;
+    justify-content: center;
 }
 
 li, li a {
     color: var(--cor-tercearia);
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
@@ -77,7 +72,8 @@ li a {
     background: var(--cor-primaria);
     display: block;
     padding: 10px;
-    width: 120px;
+    width: 106px;
+
 }
 
 li a:hover {
@@ -116,7 +112,7 @@ p {
 
 /*o container que esta cobrindo o conteúdo, coloquei a img do fantasma da revanche mas pode alterar no html*/
 #cover-container {
-    width: 700px; 
+    width: 600px; 
     margin: auto; 
     position: relative;
     overflow: hidden;
@@ -128,7 +124,7 @@ p {
     top: 0; 
     left: 0;
     z-index: 100; 
-    width:85.7%;
+    width:500px;
     height: 100%;
     border-left: 50px solid var(--cor-tercearia);
     border-right: 50px solid var(--cor-tercearia);
